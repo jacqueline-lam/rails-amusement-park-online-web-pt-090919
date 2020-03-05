@@ -1,0 +1,8 @@
+<b>Name: </b><%= @user.name %>
+<b>Tickets: </b><%= @user.tickets %>
+<b>Mood: </b><%= @user.mood %>
+<b>Height: </b><%= @user.height %> inches
+<% if @user.admin %>
+  <b>ADMIN</b>
+<% end %>
+<%= link_to "See attractions", attractions_path %>

@@ -1,0 +1,8 @@
+<%= form_for(@attraction) do |f| %>
+    Name <%= f.text_field :name %>
+    Height Requirement (in inches) <%= f.number_field :min_height %>
+    How fun was it? (1-5 scale) <%= f.number_field :happiness_rating %>
+    How nausea-inducing is it? (1-5 scale) <%= f.number_field :nausea_rating %>
+    How many tickets does it cost? <%= f.number_field :tickets %><br>
+    <%= f.submit %>
+<% end %>
